@@ -1,0 +1,60 @@
+[project]
+name = "diffplan"
+version = "0.1.0"
+description = "Differentiable Planning Library"
+authors = [
+    {name = "Linfeng Zhao"},
+    {name = "Hongyu Li"},
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9,<3.10"
+dependencies = [
+    "torch==2.0.1",
+    "torchvision==0.15.2",
+    "torch-geometric==2.3.0",
+    "torch-scatter",
+    "torch-sparse",
+    "torch-cluster",
+    "torch-spline-conv",
+    "tensorboard>=2.8.0",
+    "pytorch-lightning>=2.0.0",
+    "lightning>=2.0.0",
+    "networkx>=2.6.0",
+    "lie-learn",
+    "e2cnn>=0.2.0",
+    "escnn>=1.0.0",
+    "wandb>=0.12.0",
+    "sacred>=0.8.2",
+    "omegaconf>=2.1.0",
+    "plotly>=5.3.0",
+    "termcolor>=1.1.0",
+    "rich>=10.0.0",
+    "gym-miniworld>=1.0.0",
+]
+
+[project.optional-dependencies]
+habitat = [
+    "habitat-sim>=0.3.2",  # For 3D visual navigation environments
+    "habitat-lab>=0.3.2",  # Habitat Lab environments and tasks
+    "magnum",  # Required by Habitat-sim for visualization
+]
+
+# Development dependencies
+dev = [
+    "pre-commit>=2.15.0",
+    "black>=22.3.0",
+    "isort>=5.10.1",
+    "flake8>=4.0.1",
+    "pytest>=7.0.0",
+]
+
+# All optional dependencies combined
+all = ["diffplan[habitat,dev]"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true 
