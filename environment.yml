@@ -1,0 +1,25 @@
+name: release_diffplan
+channels:
+  - pytorch
+  - nvidia
+  - pyg
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - uv
+  - setuptools>=40.8.0
+  - wheel
+  - cudatoolkit=11.8
+  - cmake>=3.14
+  - ninja
+  - eigen>=3.3.7
+  - pytorch=2.0.1
+  - pytorch-cuda=11.8
+  - torchvision=0.15.2
+  - pyg=2.3.0
+  - pytorch-scatter
+  - pytorch-sparse
+  - pytorch-cluster
+  - pytorch-spline-conv
