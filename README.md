@@ -1,8 +1,8 @@
 # Differentiable Planning Library
 
-
 **This is the official codebase for the following three papers:**
 
+**_(Please see the branch [backup-iclr23](https://github.com/linfeng-z/DiffPlan/tree/backup-iclr23) if you look for the older version.)_**
 
 ### **E(2)-Equivariant Graph Planning for Navigation**
 - **RA-L, IROS 2024 (oral)**
@@ -21,6 +21,20 @@
 - Linfeng Zhao, Huazhe Xu, Lawson L.S. Wong
 - [[Paper]](https://lfzhao.com/paper/paper-idplan-iclr2023.pdf) [[Poster]](https://lfzhao.com/poster/poster-idplan-iclr2023.pdf) [[Slides]](https://lfzhao.com/slides/slides-idplan-iclr2023.pdf) [[ICLR page]](https://iclr.cc/virtual/2023/poster/10976) [[OpenReview]](https://openreview.net/forum?id=PYbe4MoHf32) [[arXiv]](https://arxiv.org/abs/2210.13542)
 
+
+
+## Papers
+
+
+### Symmetric Planning
+
+![SymPlan-equivariance-animation](assets/SymPlan-equivariance-animation.gif)
+
+
+
+### Implicit Differentiable Planning
+
+![IDPlan-compare-animation](assets/IDPlan-compare.gif)
 
 
 
